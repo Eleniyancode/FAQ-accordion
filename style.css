@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(./assets/fonts/static/WorkSans-SemiBold.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  hsl(275, 100%, 97%);
+    overflow:auto;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 80%;
+    /* border: 2px solid brown; */
+    padding: 3rem;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+header {
+    /* margin: 0 auto; */
+    display: flex;
+    max-width: 50%;
+    /* border: 2px solid yellow; */
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+header img {
+    display: inline-block;
+    width: 1.5rem;
+}
+
+header h1 {
+    font-size:  3rem;
+    font-family: 'MyFont';
+    font-weight: bolder;
+}
+
+.faq-section {
+    margin-bottom: 2rem;
+}
+
+.div-faq-question {
+    font-weight: bold;
+    font-family: 'MyFont';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.div-faq-question:hover {
+    color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+
+.div-faq-question input {
+    appearance: none;
+    display: inline-block;
+    width: 2rem;
+    /* border: 2px solid goldenrod; */
+    height: 2rem;
+    border-radius: 50%;
+    background-color: hsl(292, 16%, 49%);
+    cursor: pointer;
+}
+
+
+
+.div-faq-question label {
+    position: relative;
+    /* border: 2px solid goldenrod; */
+    cursor: pointer;
+
+}
+
+label span {
+    display: inline-block;
+    border: 2px solid white;
+    width: 1rem;
+    height: 1px;
+    position: absolute;
+    left: 22%;
+    top: 40%;
+    /* left: 2.4px; */
+}
+
+label span:nth-of-type(2) {
+    border-color: white;
+    top: 20%;
+    left: 40%;
+    height: 1.2rem;
+    width: 1px;
+    transition: all 0.5s ease;
+}
+
+
+.div-faq-answer {
+    display: none;
+    width: 90%;
+    font-family: 'MyFont';
+    font-weight: normal;
+    color: hsla(292, 16%, 49%, 0.8);
+}
+
+.active{
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+
+
+@media (min-width: 600px) {
+    html {
+        font-size: 87.5%;
+    }
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container {
+        margin-top: 5rem;
+        max-width: 50%;
+    }
+}

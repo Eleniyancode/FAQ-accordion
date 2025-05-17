@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | FAQ accordion</title>
 
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,33 +18,91 @@
 </head>
 <body>
 
-  FAQs
+  <main class="container">
+    <header>
+    <img src="./assets/images/icon-star.svg" alt="icon-star">
+    <h1>FAQs</h1>
+  </header>
+  <!-- FAQ sections -->
+  <section class="faq-section">
+    <div class="div-faq-question">
+      <label for="toggle-checkbox-1">
+      <input type="checkbox" id="toggle-checkbox-1" class="toggle-checkbox">
+      <span></span>
+      <span id="span-1"></span>  
+    </label>
+    <h3>What is Frontend Mentor, and how will it help me?</h3>
+    </div>
 
-  What is Frontend Mentor, and how will it help me?
+    <div class="div-faq-answer" id="answer-1">
+      <p>
+        Frontend Mentor offers realistic coding challenges to help developers improve their 
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+        all levels and ideal for portfolio building.
+      </p>
+    </div>
+  </section>
 
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
+  <section class="faq-section">
+    <div class="div-faq-question">
+      <label for="toggle-checkbox-2">
+      <input type="checkbox" id="toggle-checkbox-2" class="toggle-checkbox">
+      <span></span>
+      <span id="span-2"></span>  
+    </label>
+    <h3>Is Frontend Mentor free?</h3>
+    </div>
 
-  Is Frontend Mentor free?
+    <div class="div-faq-answer" id="answer-2">
+      <p>
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
+      </p>
+    </div>
+  </section>
 
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
+  <section class="faq-section">
+    <div class="div-faq-question">
+      <label for="toggle-checkbox-3">
+      <input type="checkbox" id="toggle-checkbox-3" class="toggle-checkbox">
+      <span></span>
+      <span id="span-3"></span>  
+    </label>
+    <h3>Can I use Frontend Mentor projects in my portfolio?</h3>
+    </div>
 
-  Can I use Frontend Mentor projects in my portfolio?
+    <div class="div-faq-answer" id="answer-3">
+      <p>
+        Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+        way to showcase your skills to potential employers!
+      </p>
+    </div>
+  </section>
 
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
+    <section class="faq-section">
+    <div class="div-faq-question">
+      <label for="toggle-checkbox-4">
+      <input type="checkbox" id="toggle-checkbox-4" class="toggle-checkbox">
+      <span></span>
+      <span id="span-4"></span>  
+    </label>
+    <h3>How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+    </div>
 
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
+    <div class="div-faq-answer" id="answer-4">
+      <p>
+        The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.
+      </p>
+    </div>
+  </section>
+  </main>
 
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
